@@ -45,7 +45,7 @@ class LyricGenerator:
     def load_lyrics(self):
         try:
             # Load lyrics from cleaned JSON file
-            with open(os.path.join('app', 'data', 'lyrics_clean.json'), 'r', encoding='utf-8') as f:
+            with open(os.path.join('lyrics_clean.json'), 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 # Extract lyrics into list format
                 self.lyrics_data = [song['lyrics'] for song in data]
